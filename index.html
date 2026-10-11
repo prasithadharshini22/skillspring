@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSpring - Career Guidance for Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 SkillSpring</h1>
+    <p>Discover your career path. Learn with free resources.</p>
+  </header>
+
+  <main>
+    <!-- QUIZ -->
+    <section id="quiz-section" class="card">
+      <div class="progress-track">
+        <div id="quiz-progress" class="progress-fill"></div>
+      </div>
+      <p id="step-counter"></p>
+      <h2 id="question-text"></h2>
+      <div id="options"></div>
+      <button id="back-btn" class="link-btn">← Back</button>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="result-section" class="hidden">
+      <div class="card intro-card">
+        <h2>Your top career matches</h2>
+        <p>These matches are based on your answers. Pick one to personalise a free 4-week learning plan.</p>
+      </div>
+      <div id="results-list"></div>
+      <button id="restart-btn" class="big-btn">Retake quiz</button>
+    </section>
+
+    <!-- SETUP (skills, hours, device) -->
+    <section id="setup-section" class="hidden">
+      <div id="setup-content"></div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap-section" class="hidden">
+      <div id="roadmap-content"></div>
+      <div class="action-row no-print">
+        <button id="matches-btn" class="small-btn">← My matches</button>
+        <button id="settings-btn" class="small-btn">⚙ Change settings</button>
+        <button id="summary-btn" class="small-btn">📄 Parent/teacher plan</button>
+        <button id="print-btn" class="small-btn">🖨 Print / Save PDF</button>
+        <button id="reset-btn" class="small-btn danger">Reset progress</button>
+      </div>
+    </section>
+
+    <!-- ONE-PAGE SUMMARY -->
+    <section id="summary-section" class="hidden">
+      <div id="summary-content"></div>
+      <div class="action-row no-print">
+        <button id="summary-back-btn" class="small-btn">← Back to roadmap</button>
+        <button id="summary-print-btn" class="small-btn">🖨 Print / Save as PDF</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="no-print">
+    <p>SkillSpring uses simple rule-based matching, not a trained AI model. Resource links go to free third-party websites.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
